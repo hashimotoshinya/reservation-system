@@ -1,0 +1,93 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+}
+
+.container {
+    width: 400px;
+    background-color: #fff;
+    border-radius: 6px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+    padding: 2rem;
+    text-align: center;
+}
+
+.message {
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+    color: #333;
+}
+
+.verify-button {
+    display: inline-block;
+    margin-bottom: 1.2rem;
+    padding: 0.75rem 1.5rem;
+    background-color: #2563eb;
+    color: #fff;
+    border-radius: 4px;
+    text-decoration: none;
+    transition: background 0.3s ease;
+}
+
+.verify-button:hover {
+    background-color: #1e4fd6;
+}
+
+.resend {
+    margin: 1rem 0;
+}
+
+.resend-link {
+    background: none;
+    border: none;
+    color: #2563eb;
+    font-size: 0.95rem;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.resend-link:hover {
+    color: #1e4fd6;
+}
+
+.status {
+    margin-top: 1rem;
+    color: green;
+    font-size: 0.9rem;
+}
+
+/* ▼ レスポンシブ対応 ▼ */
+@media (max-width: 768px) {
+    .main {
+        height: auto;
+        padding: 2rem 1rem;
+    }
+
+    .container {
+        width: 100%;
+        padding: 1.5rem;
+    }
+
+    .message {
+        font-size: 0.95rem;
+    }
+
+    .verify-button {
+        width: 100%;
+        padding: 0.75rem;
+    }
+
+    .resend-link {
+        display: inline-block;
+        margin-top: 0.8rem;
+    }
+}

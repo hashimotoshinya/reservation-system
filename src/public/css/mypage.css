@@ -1,0 +1,142 @@
+.mypage-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.mypage-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #333;
+    text-align: center;
+}
+
+.mypage-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+}
+
+.mypage-section {
+    background: #fff;
+    border-radius: 12px;
+    padding: 16px;
+}
+
+.section-title {
+    font-size: 1.2rem;
+    margin-bottom: 12px;
+    color: #2563eb;
+}
+
+.flash-message {
+    display: inline-block;
+    margin-left: 16px;
+    background: #2563eb;
+    color: white;
+    padding: 6px 10px;
+    border-radius: 6px;
+    font-size: 0.9rem;
+    opacity: 1;
+    animation: fadeOut 2.0s forwards;
+}
+
+@keyframes fadeOut {
+    0% { opacity: 1;}
+    80% { opacity: 1; }
+    100% { opacity: 0; display: none; }
+}
+.reservation-card {
+    position: relative;
+    background: #2563eb;
+    color: #fff;
+    border-radius: 10px;
+    padding: 12px;
+    margin-bottom: 12px;
+    font-size: 0.9rem;
+}
+
+.delete-form {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+}
+
+.delete-btn {
+    background: transparent;
+    border: none;
+    font-size: 1.2rem;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.delete-btn:hover {
+    color: #e74c3c;
+}
+
+.card-list.favorites {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+}
+
+.favorite-card {
+    background: #f9f9f9;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
+    font-size: 0.85rem;
+    text-align: center;
+}
+
+.favorite-card img {
+    width: 100%;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 6px;
+    margin-bottom: 6px;
+}
+
+.card-actions {
+    margin-top: 6px;
+    display: flex;
+    justify-content: center;
+    gap: 6px;
+}
+
+.detail-btn {
+    padding: 4px 8px;
+    background: #2563eb;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 6px;
+    font-size: 0.8rem;
+    transition: background 0.3s;
+}
+
+.detail-btn:hover {
+    background: #1d4ed8;
+}
+
+.like-btn {
+    border: none;
+    background: none;
+    font-size: 1.1rem;
+    cursor: pointer;
+}
+
+/* ==============================
+    レスポンシブ
+   ============================== */
+@media (max-width: 768px) {
+    .mypage-content {
+        grid-template-columns: 1fr;
+    }
+
+    .card-list.favorites {
+        grid-template-columns: 1fr;
+        /* スマホは1列 */
+    }
+}

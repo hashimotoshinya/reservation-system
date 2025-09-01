@@ -1,0 +1,138 @@
+/* コンテナ */
+.shop-detail-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+    margin: 20px;
+}
+
+/* 左：店舗情報 */
+.shop-detail-left {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.shop-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.back-btn {
+    display: inline-block;
+    padding: 3px 10px;
+    background: #e9e7e7;
+    color: #030303;
+    font-size: 1.2rem;
+    border-radius: 6px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.back-btn:hover {
+    background: #007BFF;
+}
+
+.shop-detail-img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.shop-tags {
+    color: #007BFF;
+    margin: 10px 0;
+}
+
+.shop-description {
+    color: #555;
+    line-height: 1.6;
+}
+
+/* 右：予約フォーム */
+.shop-detail-right {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.reservation-card {
+    background: #2b5cff;
+    color: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    width: 100%;
+    max-width: 500px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.reservation-card h3 {
+    margin-bottom: 15px;
+    font-size: 1.4rem;
+}
+
+.reservation-card input,
+.reservation-card select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 12px;
+    border: none;
+    border-radius: 6px;
+}
+
+.reservation-history {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 10px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    font-size: 0.9rem;
+}
+
+.reservation-detail-card {
+    padding: 5px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.reservation-detail-card:last-child {
+    border-bottom: none;
+}
+
+.reserve-btn {
+    display: inline-block;
+    width: 100%;
+    padding: 12px;
+    background: #0056b3;
+    border: none;
+    border-radius: 8px;
+    color: #fff;
+    font-size: 1rem;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.reserve-btn:hover {
+    background: #004099;
+}
+
+.error-message {
+    color: red;
+    font-size: 0.9rem;
+    margin: -0.5rem 0 0.8rem 2rem;
+}
+
+/* ---- レスポンシブ ---- */
+@media (max-width: 768px) {
+    .shop-detail-container {
+        grid-template-columns: 1fr;
+    }
+
+    .shop-detail-right {
+        margin-top: 20px;
+    }
+}
