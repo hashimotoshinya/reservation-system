@@ -20,3 +20,6 @@ yarn-error.log
 !/src/storage/app/public/
 !/src/storage/app/public/images/
 !/src/storage/app/public/images/*
+
+# MySQL データは全て無視
+/docker/mysql/data/
